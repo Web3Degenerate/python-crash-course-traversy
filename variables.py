@@ -23,8 +23,25 @@ VARIABLE RULES:
 # Multiple Assignment
 x, y, name, is_cool = (1, 2.5, 'John', True)
 
+# Basic Math
+a = x + y
+
+# Casting
+x = str(x)
+
+# Type
+print(type(x))
+
+y = int(y) # was 2.5, int turns to whole number
+
+print(type(y), y)
 
 # Use parenthesis when printing: 
 print('Hello', name)
 print(name)
-print(x, y, name, is_cool)
+print(x, y, name, is_cool, a)
+
+
+
+
+
