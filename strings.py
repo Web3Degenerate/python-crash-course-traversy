@@ -67,3 +67,5 @@ print(s.isalpha())
 
 # is ALL numeric
 print(s.isnumeric())
+
+# Resume at (16:25): https://youtu.be/JJmcL1N2KQs?si=oY5n6OdOc7bbNPSH&t=985
