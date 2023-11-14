@@ -33,8 +33,10 @@ x = str(x)
 print(type(x))
 
 y = int(y) # was 2.5, int turns to whole number
+z = float(y) # turn int 2 back to float, goes to 2.0
 
 print(type(y), y)
+print(type(z), z)
 
 # Use parenthesis when printing: 
 print('Hello', name)
