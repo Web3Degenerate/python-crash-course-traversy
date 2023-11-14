@@ -45,5 +45,25 @@ print(s.replace('world', 'everyone'))
 sub = 'h'
 print(s.count(sub))
 
-# Resume (15:25): https://youtu.be/JJmcL1N2KQs?si=aUPkVIf6_dvZeiHd&t=925
+# Added (15:25): https://youtu.be/JJmcL1N2KQs?si=aUPkVIf6_dvZeiHd&t=925
 
+# Starts with
+print(s.startswith('hello')) # True
+
+# Ends with
+print(s.endswith('d')) # True
+
+# Split into a list, which is basically an array: 
+print(s.split()) #['hello', 'world'] 
+
+# Find position
+print(s.find('r')) # returns 8
+
+#is ALL alphanumeric
+print(s.isalnum())
+
+# Is ALL alphabetic
+print(s.isalpha())
+
+# is ALL numeric
+print(s.isnumeric())
