@@ -61,5 +61,13 @@ fruits_set.clear()
 print(fruits_set) # returns empty set => set()
 
 # Delete set
-del fruits_set
-print(fruits_set) # returns error. Deleting it is the same as never defining it. 
+# del fruits_set
+# print(fruits_set) # returns error. Deleting it is the same as never defining it. 
+
+
+# NO DUPLICATES ALLOWED IN A SET
+grocery_list = {'eggs', 'milk', 'bacon'}
+print(grocery_list)
+
+grocery_list.add('eggs') #No error, just doesn't add it twice!
+print(grocery_list)
