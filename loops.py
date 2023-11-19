@@ -29,4 +29,16 @@ for i in range(len(people)):
     # print(people[i])
     print(f'Range Loop Person is: {people[i]}')
 
+# Custom Range: here print numbers 0 to 10:
+for i in range(0, 11):
+    print(f'Number: {i}')
+
+
+
 # While loops execute a set of statements as long as a condition is true.
+# Started (1:04:13): https://youtu.be/JJmcL1N2KQs?si=eJ8wQb6kziIPo0MD&t=3853
+count = 0
+while count <= 10:
+    print(f'Count in while loop is: {count}')
+    count += 1
+
