@@ -44,4 +44,14 @@ print(c.hump('hello there world'))
 
 
 # At (1:13:05) Example of Custom Module to be imported: https://youtu.be/JJmcL1N2KQs?si=C32j1fOkWALZYydn&t=4385
+# Create email validator function in 'validator.py'
 
+from validator import validate_email
+
+# email = 'test@test.com'
+email = 'test#test.com'
+
+if validate_email(email):
+    print('Email is valid')
+else: 
+    print('Email is invalid')      

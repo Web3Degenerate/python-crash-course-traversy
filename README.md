@@ -16,3 +16,7 @@
 5.  See all modules installed with `pip freeze` (1:11:00)
 
 - here, returned `camelcase==0.2`
+
+6. To remove local uncommitted changes (even if staged) run. From this [Stackoverflow Article]https://stackoverflow.com/questions/1125968/how-do-i-force-git-pull-to-overwrite-local-files)
+   - `git reset --hard HEAD`
+   - `git pull`
