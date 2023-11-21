@@ -26,3 +26,13 @@ myFile.close()
 myFile = open('myfile.txt', 'a')
 myFile.write(' I also like PHP.')
 myFile.close()
+
+
+# READ from file (1:30:20)
+# Use mode 'r+' to read
+myFile = open('myfile.txt', 'r+')
+# pass in the number of characters to read, here '100'
+text = myFile.read(100)
+print(text)
+
+# Pick up with JSON at (1:30:55): https://youtu.be/JJmcL1N2KQs?si=4uBvIu87_ggFk32k&t=5455
