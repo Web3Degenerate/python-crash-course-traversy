@@ -34,3 +34,29 @@ print(brad.name)
 brad.has_birthday()
 # Call the class function greeting()
 print(brad.greeting())
+
+# Extend class (1:22:07): https://youtu.be/JJmcL1N2KQs?si=VG3PIqN-08-e4_n2&t=4927
+# Create class Customer, which extends User class above.
+class Customer(User):
+        # Constructor (self is this)
+    def __init__(self, name, email, age):
+        self.name = name
+        self.email = email
+        self.age = age
+        self.balance = 0
+
+    def set_balance(self, balance):
+        self.balance = balance
+
+# You can access parent methods since Customer inherits from User. 
+# Or you can overwrite that greeting as shown here: (adding balance to the User greeting template)
+    def greeting(self):
+        return f'My name is {self.name} and I am {self.age} and my balance is {self.balance}'
+
+# Initialize a customer object
+janet = Customer('Janet Smith', 'janet@gmail.com', '42')
+
+# Set a balance for customer object
+janet.set_balance(500)
+
+print(janet.greeting())
