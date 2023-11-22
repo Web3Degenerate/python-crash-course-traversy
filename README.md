@@ -2,7 +2,15 @@
 
 1. Download Python from [Python.org](https://www.python.org/)
 
-2.
+   - Check python version in cmd line:
+     - `python --version` or `py --version`
+
+2. Check that you have the **pip** _package installer for Python_
+   - Visit [https://pip.pypa.io/en/stable/](https://pip.pypa.io/en/stable/)
+   - Covered at (2:50) on [TTH](https://teamtreehouse.com/library/how-to-install-python-windows/installing-python)
+   - Check **pip** version with
+     - `pip3 --version` or `pip --version`
+     - _returned pip 20.2.3 from x path_
 
 ## _Resume at [59:09](https://youtu.be/JJmcL1N2KQs?si=8Wzh4dnsltXJ-k22&t=3549)_ Start **loops.py**.
 
