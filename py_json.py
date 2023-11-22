@@ -18,5 +18,8 @@ print(user['first_name']) #returns John
 
 
 # Turn dict into JSON at (1:33:48): https://youtu.be/JJmcL1N2KQs?si=uyzxk_3tN_ZqjwZB&t=5628
+car = {'make': 'Ford', 'model': 'Mustang', 'year': 1970}
 
-
+carJSON = json.dumps(car)
+print(carJSON)
+print(type(carJSON))
