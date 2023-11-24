@@ -43,3 +43,34 @@ class Student:
         return self.reassurance()
 
 
+
+# RACECAR CLASS
+# First, create a class named RaceCar. 
+# # In the __init__ for the class, take arguments for color and fuel_remaining. 
+# # Set these as attributes on the instance.
+# Also, add the **kwargs argument and use setattr to take any other keyword arguments that come in.
+
+# Part 2: 
+#Now let's handle the racecar running laps. Add a laps attribute to the RaceCar class and set it to 0. 
+# Add a method named run_lap. It'll take a length argument. 
+# It should reduce the fuel_remaining attribute by the length argument multiplied by 0.125 (length * 0.125). 
+# Also, increment the laps attribute by 1 each time the run_lap method is called.
+
+# Part 3: 
+# In Python, attributes defined on the class, but not an instance, are universal. 
+# So if you change the value of the RaceCar's laps attribute, any instance of RaceCar that doesn't have laps set explicitly will have its value changed, too!
+# For example, right now, if we made a RaceCar instance named red_car, then set RaceCar.laps = 10, red_car.laps would then be set to 10 too!
+# To prevent this, be sure to set the laps attribute inside the __init__ method (it doesn't have to be a keyword argument, though). If you already did it, you're good to go!
+
+class RaceCar:
+    def __init__(self, color, fuel_remaining, laps=0, **kwargs):
+        self.color = color
+        self.fuel_remaining = fuel_remaining
+        self.laps = laps
+        
+        for key, value in kwargs.items():
+            setattr(self, key, value)
+
+    def run_lap(self, length):
+        self.fuel_remaining = self.fuel_remaining - (length * 0.125)
+        self.laps += 1
