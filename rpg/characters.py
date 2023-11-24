@@ -11,3 +11,7 @@ class Character:
         for key, value in kwargs.items():
             setattr(self, key, value)
     
+    #Returns a string that we use to identify our object whenever it is turned into a string
+    def __str__(self):
+        #tell if archer, thief or barbarian etc.
+        return "{}: {}".format(self.__class__.__name__, self.name)

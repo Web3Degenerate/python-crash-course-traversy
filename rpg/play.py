@@ -10,6 +10,8 @@ print(kenneth.sneaky)
 print(kenneth.agile)
 print(kenneth.hide(8)) #hide when light level is 8 
 
+print(kenneth) #prints string in Character class' def __str__(self): method
+
 #isinstance()
 is_instance = isinstance('a', str)
 print(f'string example is {is_instance}') #True
@@ -38,3 +40,24 @@ print(f'kenneth dunder is {kenneth_dunder}')
 # kenneth dunder class dunder name is 'Thief'
 kenneth_dunder = kenneth.__class__.__name__
 print(f'kenneth dunder class dunder name is {kenneth_dunder}')
+
+# __repr__ used for debugging:
+kenneth_repr = kenneth.__repr__
+print(f'kenneth __repr__ is {kenneth_repr}') # <method-wrapper '__repr__' of Thief object at 0x00...FB10>
+
+
+
+# Add a _str_ method to the DreamCar class. 
+# In the method, return a string that states the dream car's make and model. 
+# The string should look like this: 'My dream car is a Ford Mustang.'
+
+class DreamCar:
+    def __init__(self, make, model):
+        self.make = make
+        self.model = model
+    # insert your code here
+    def __str__(self):
+       return "My dream car is a {} {}.".format(self.make, self.model)
+    
+my_car = DreamCar('Ford', 'Mustang')
+print(my_car) #returns 'My dream car is a Ford Mustang.'
