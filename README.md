@@ -28,3 +28,13 @@
 6. To remove local uncommitted changes (even if staged) run. From this [Stackoverflow Article](https://stackoverflow.com/questions/1125968/how-do-i-force-git-pull-to-overwrite-local-files)
    - `git reset --hard HEAD`
    - `git pull`
+
+## Notes
+
+1. use `dir()` to show the directory of an object
+
+   - `print(dir(prot))`
+
+2. **Name Mangaling** - for any methods with left-side double underscores only (`__name = "Security"`)
+   - Makes it harder to get access to that thing
+   - Access with `var._Class-Name__Method-Name()`
